@@ -57,11 +57,11 @@ const Projects = () => {
 
   const project2Images = useMemo(
     () => [
-      { path: "/expo-logo.png", width: "w-8" },
-      { path: "/postgres.png", width: "w-10" },
-      { path: "/nestjs.png", width: "w-8" },
-      { path: "/socket.io.png", width: "w-8" },
-      { path: "/docker-logo.png", width: "w-8" },
+      { path: "/expo-logo.png", width: "w-6 sm:w-8" },
+      { path: "/postgres.png", width: "w-8 sm:w-10" },
+      { path: "/nestjs.png", width: "w-6 sm:w-8" },
+      { path: "/socket.io.png", width: "w-6 sm:w-8" },
+      { path: "/docker-logo.png", width: "w-6 sm:w-8" },
     ],
     []
   );
@@ -339,13 +339,13 @@ const Projects = () => {
             alt=""
           />
         </div>
-        <div className=" block sm:absolute z-10 bottom-2 left-2 rounded-xl drop-shadow-xl bg-white w-full sm:w-1/2 min-h-100 p-3 sm:p-5">
+        <div className="border-b-4 border-b-brown-3 block sm:absolute z-10 bottom-2 left-2 rounded-xl drop-shadow-xl bg-white w-full sm:w-1/2 min-h-100 p-3 sm:p-5">
           <p className="text-brown-7 font-semibold text-xs sm:text-sm">
             TECH STACK USED
           </p>
           <div
             ref={project2Ref}
-            className="mt-7 flex flex-row flex-wrap items-center justify-center gap-7 w-full sm:w-1/2 overflow-y-hidden"
+            className="mt-7 flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-7 w-full sm:w-1/2 overflow-y-hidden"
           >
             {project2Images.map((imgObj, i) => (
               <motion.img
@@ -357,19 +357,19 @@ const Projects = () => {
                 key={i}
                 src={imgObj.path}
                 custom={i}
-                className={imgObj.width}
+                className={`${imgObj.width}`}
               />
             ))}
           </div>
         </div>
       </div>
-      <div className="relative aspect-auto flex flex-row gap-2 z-30 w-3/4 lg:w-1/2 bg-none min-h-300 mx-auto justify-center sm:-mt-10 items-center">
+      <div className="flex flex-row gap-2 z-30 w-3/4 lg:w-1/2 bg-none min-h-300 mx-auto justify-center sm:-mt-10 items-center">
         <motion.img
           ref={p2image1}
           animate={animate4}
           initial={{ opacity: 0, y: 100 }}
           src="/skychat-phone.png"
-          className="hidden sm:block w-36"
+          className="hidden sm:block w-32"
           alt=""
         />
         <motion.img
@@ -377,15 +377,7 @@ const Projects = () => {
           animate={animate5}
           initial={{ opacity: 0, y: -100 }}
           src="/skychat-phone4.png"
-          className="hidden sm:block w-56"
-          alt=""
-        />
-        <motion.img
-          ref={p2image2_5}
-          animate={animate5_5}
-          initial={{ opacity: 0, y: -100 }}
-          src="/skychat-phone3.png"
-          className="block sm:hidden w-56 -mt-28"
+          className="hidden sm:block w-52"
           alt=""
         />
         <motion.img
@@ -393,7 +385,7 @@ const Projects = () => {
           animate={animate6}
           initial={{ opacity: 0, y: 100 }}
           src="/skychat-phone5.png"
-          className="hidden sm:block w-36"
+          className="hidden sm:block w-32"
           alt=""
         />
       </div>
