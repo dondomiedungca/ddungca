@@ -1,5 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect, useMemo, useRef } from "react";
+import React, { useEffect, useMemo } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
@@ -10,32 +10,13 @@ const Projects = () => {
     threshold: 0.8,
   });
   const { ref: project2Ref, inView: project2Inview } = useInView({
-    threshold: 1,
+    threshold: 0.6,
     delay: 0.2,
   });
-  const { ref: p2image1, inView: p2image1IInView } = useInView({
-    threshold: 0.8,
-    delay: 0.2,
-  });
-  const { ref: p2image2, inView: p2image2IInView } = useInView({
-    threshold: 0.8,
-    delay: 0.2,
-  });
-  const { ref: p2image2_5, inView: p2image2_5IInView } = useInView({
-    threshold: 0.8,
-    delay: 0.2,
-  });
-  const { ref: p2image3, inView: p2image3IInView } = useInView({
-    threshold: 0.8,
-    delay: 0.2,
-  });
+
   const animate = useAnimation();
   const animate2 = useAnimation();
   const animate3 = useAnimation();
-  const animate4 = useAnimation();
-  const animate5 = useAnimation();
-  const animate5_5 = useAnimation();
-  const animate6 = useAnimation();
 
   useEffect(() => {
     if (project1InView) {
@@ -57,11 +38,11 @@ const Projects = () => {
 
   const project2Images = useMemo(
     () => [
-      { path: "/expo-logo.png", width: "w-6 sm:w-8" },
-      { path: "/postgres.png", width: "w-8 sm:w-10" },
-      { path: "/nestjs.png", width: "w-6 sm:w-8" },
-      { path: "/socket.io.png", width: "w-6 sm:w-8" },
-      { path: "/docker-logo.png", width: "w-6 sm:w-8" },
+      { path: "/expo-logo.png", width: "w-10" },
+      { path: "/postgres.png", width: "w-10" },
+      { path: "/nestjs.png", width: "w-10" },
+      { path: "/socket.io.png", width: "w-10" },
+      { path: "/docker-logo.png", width: "w-10" },
     ],
     []
   );
@@ -80,27 +61,18 @@ const Projects = () => {
     }
   }, [project2Inview]);
 
-  useEffect(() => {
-    if (p2image2IInView || p2image2_5IInView) {
-      animate4.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      animate5.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      animate5_5.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-      animate6.start({ opacity: 1, y: 0, transition: { duration: 0.5 } });
-    }
-  }, [p2image2IInView, p2image2_5IInView]);
-
   return (
     <section className="bg-caramel-2 min-h-500">
       <p className="relative z-30 top-5 text-brown-4 text-sm font-semibold text-center w-full">
         FEATURED PROJECTS
       </p>
-      <div className="relative z-30 w-3/4 lg:w-1/2 bg-white drop-shadow-2xl rounded-lg min-h-100 mx-auto mt-20 sm:mt-24 flex flex-col sm:flex-row">
+      <div className="relative z-30 w-3/4 lg:w-1/2 bg-white drop-shadow-xl rounded-lg min-h-100 mx-auto mt-20 sm:mt-24 flex flex-col sm:flex-row">
         <div className="p-3 md:p-5 w-full sm:w-1/2">
           <div className="sm:hidden flex flex-row gap-2 justify-end">
             <a
               href="https://capable-moxie-0abfb6.netlify.app/"
               target="_blank"
-              className="bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
+              className="bg-white-1 cursor-pointer rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +106,7 @@ const Projects = () => {
             <a
               href="https://github.com/nodnod08/leiger-web"
               target="_blank"
-              className="bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
+              className="bg-white-1 cursor-pointer rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -283,111 +255,112 @@ const Projects = () => {
           />
         </div>
       </div>
-      <div className="relative flex flex-col gap-5 sm:block z-30 w-3/4 lg:w-1/2 bg-none min-h-300 mx-auto mt-28 sm:mt-32">
-        <div className="block sm:absolute z-20 top-2 right-2 rounded-xl drop-shadow-xl bg-caramel-3 w-full sm:w-2/3 min-h-100">
-          <p className="text-brown-6 font-semibold sm:font-bold text-sm sm:text-lg mx-3 mt-3">
-            SKYCHAT
-          </p>
-          <p className="text-brown-6 font-normal text-sm mx-3">
-            - Mobile Application - 2023
-          </p>
-          <p className="relative z-20 text-brown-4 font-semibold text-xs sm:text-sm mt-7 mx-3">
-            I also build a mobile application made from Expo React Native. This
-            application included the functionality of Chat, Video call,
-            Authentication via Google authentication and custom authentication.
-          </p>
-          <div className="relative z-20 flex flex-row items-center justify-between pt-5 mx-3 mb-3">
-            <img src="/skychat-logo.png" className="w-14" alt="" />
-            <a
-              href="https://github.com/nodnod08/skychat-mobile"
-              target="_blank"
-              className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
+      <div className="relative bg-white sm:block z-30 w-3/4 lg:w-1/2 min-h-300 mx-auto mt-28 sm:mt-32 py-3 sm:py-5 drop-shadow-xl rounded-lg">
+        <p className="text-brown-6 font-semibold sm:font-bold text-sm sm:text-lg mx-5 mt-5">
+          SKYCHAT
+        </p>
+        <p className="text-brown-6 font-normal text-sm mx-5">
+          - Mobile Application - 2023
+        </p>
+        <p className="relative z-20 text-brown-4 font-semibold text-xs sm:text-sm mt-7 mx-5">
+          I also build a mobile application made from Expo React Native. This
+          application included the functionality of Chat, Video call,
+          Authentication via Google authentication and custom authentication.
+        </p>
+        <div className="flex flex-col gap-4 sm:flex-row relative z-20 sm:items-center justify-start sm:justify-center px-5 mt-5">
+          <div>
+            <p className="relative z-20 text-brown-7 font-semibold text-xs sm:text-sm">
+              TECH STACK USED
+            </p>
+            <div
+              ref={project2Ref}
+              className="relative z-20 mt-3 sm:mt-7 flex flex-row flex-wrap justify-center sm:justify-center gap-4 sm:gap-5 w-full overflow-y-hidden"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="28"
-                height="28"
-                viewBox="0,0,256,256"
-              >
-                <g
-                  fill="#717171"
-                  fillRule="nonzero"
-                  stroke="none"
-                  strokeWidth="1"
-                  strokeLinecap="butt"
-                  strokeLinejoin="miter"
-                  strokeMiterlimit="10"
-                  strokeDasharray=""
-                  strokeDashoffset="0"
-                  fontFamily="none"
-                  fontWeight="none"
-                  fontSize="none"
-                  textAnchor="none"
-                >
-                  <g transform="scale(8.53333,8.53333)">
-                    <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
-                  </g>
-                </g>
-              </svg>
-            </a>
+              {project2Images.map((imgObj, i) => (
+                <motion.img
+                  animate={animate3}
+                  initial={{
+                    opacity: 0,
+                    y: 100,
+                  }}
+                  key={i}
+                  src={imgObj.path}
+                  custom={i}
+                  className={`${imgObj.width}`}
+                />
+              ))}
+            </div>
+            <div className="flex flex-col gap-2 mt-12 bg-white rounded-lg drop-shadow-xl">
+              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+                <img src="/encryption.png" className="w-5 sm:w-7" alt="" />
+                <p className="font-semibold text-brown-6 text-xs">
+                  DATA ENCRYPTION
+                </p>
+              </div>
+              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+                <img src="/connection.png" className="w-5 sm:w-7" alt="" />
+                <p className="font-semibold text-brown-6 text-xs">
+                  WORKING CONNECTION
+                </p>
+              </div>
+              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+                <img src="/authentication.png" className="w-5 sm:w-7" alt="" />
+                <p className="font-semibold text-brown-6 text-xs">
+                  MULTIPLE AUTHENTICATION
+                </p>
+              </div>
+            </div>
           </div>
-          <img
-            src="/wave-haikei.svg"
-            className="absolute bottom-0 z-10"
-            alt=""
-          />
+          <div className="z-30 w-full lg:w-1/2 bg-none mt-2 sm:mt-10 sm:mx-auto self-end">
+            <img
+              src="/skychat-mobile-view.png"
+              className="inline sm:hidden w-full drop-shadow-2xl"
+              alt=""
+            />
+            <img
+              src="/skychat-web-view.png"
+              className="hidden sm:inline w-2/3 drop-shadow-2xl"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="border-b-4 border-b-brown-3 block sm:absolute z-10 bottom-2 left-2 rounded-xl drop-shadow-xl bg-white w-full sm:w-1/2 min-h-100 p-3 sm:p-5">
-          <p className="text-brown-7 font-semibold text-xs sm:text-sm">
-            TECH STACK USED
-          </p>
-          <div
-            ref={project2Ref}
-            className="mt-7 flex flex-row flex-wrap items-center justify-center gap-4 sm:gap-7 w-full sm:w-1/2 overflow-y-hidden"
+        <div className="relative z-20 flex flex-row items-center justify-between mt-5 mx-5">
+          <a
+            href="https://github.com/nodnod08/skychat-mobile"
+            target="_blank"
+            className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
           >
-            {project2Images.map((imgObj, i) => (
-              <motion.img
-                animate={animate3}
-                initial={{
-                  opacity: 0,
-                  y: 100,
-                }}
-                key={i}
-                src={imgObj.path}
-                custom={i}
-                className={`${imgObj.width}`}
-              />
-            ))}
-          </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="28"
+              height="28"
+              viewBox="0,0,256,256"
+            >
+              <g
+                fill="#717171"
+                fillRule="nonzero"
+                stroke="none"
+                strokeWidth="1"
+                strokeLinecap="butt"
+                strokeLinejoin="miter"
+                strokeMiterlimit="10"
+                strokeDasharray=""
+                strokeDashoffset="0"
+                fontFamily="none"
+                fontWeight="none"
+                fontSize="none"
+                textAnchor="none"
+              >
+                <g transform="scale(8.53333,8.53333)">
+                  <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
         </div>
-      </div>
-      <div className="flex flex-row gap-2 z-30 w-3/4 lg:w-1/2 bg-none min-h-300 mx-auto justify-center sm:-mt-10 items-center">
-        <motion.img
-          ref={p2image1}
-          animate={animate4}
-          initial={{ opacity: 0, y: 100 }}
-          src="/skychat-phone.png"
-          className="hidden sm:block w-32"
-          alt=""
-        />
-        <motion.img
-          ref={p2image2}
-          animate={animate5}
-          initial={{ opacity: 0, y: -100 }}
-          src="/skychat-phone4.png"
-          className="hidden sm:block w-52"
-          alt=""
-        />
-        <motion.img
-          ref={p2image3}
-          animate={animate6}
-          initial={{ opacity: 0, y: 100 }}
-          src="/skychat-phone5.png"
-          className="hidden sm:block w-32"
-          alt=""
-        />
+        <img src="/wave-haikei.svg" className="absolute bottom-0 z-10" alt="" />
       </div>
     </section>
   );
