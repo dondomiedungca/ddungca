@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
 import Particles from "@/components/Particles";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -52,6 +53,7 @@ export default function Home() {
         />
       </section>
       <Projects />
+      <Skills />
     </main>
   );
 }

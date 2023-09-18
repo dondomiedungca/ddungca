@@ -21,10 +21,17 @@ const config: Config = {
         "brown-5": "#594D3F",
         "brown-6": "#564B40",
         "brown-7": "#787067",
+        "brown-8": "#675D53",
+        "brown-9": "#6A6A6A",
         "white-1": "#FFFCFA",
         caramel: "#FFFAF5",
         "caramel-2": "#FFF8F0",
         "caramel-3": "#FCF9F7",
+        "caramel-4": "#FEF9F4",
+        "caramel-5": "#F8EBDE",
+        "caramel-6": "#F8F0E7",
+        "caramel-7": "#f7f4f0",
+        "gray-1": "#888585",
       },
       height: {
         "800": "800px",
@@ -48,6 +55,9 @@ const config: Config = {
       },
       fontSize: {
         "2xs": "8px",
+      },
+      borderWidth: {
+        "1": "1px",
       },
     },
   },

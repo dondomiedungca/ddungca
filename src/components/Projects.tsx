@@ -255,7 +255,7 @@ const Projects = () => {
           />
         </div>
       </div>
-      <div className="relative bg-white sm:block z-30 w-3/4 lg:w-1/2 min-h-300 mx-auto mt-28 sm:mt-32 py-3 sm:py-5 drop-shadow-xl rounded-lg">
+      <div className="relative bg-white sm:block z-30 w-3/4 lg:w-1/2 min-h-300 mx-auto mt-12 sm:mt-14 py-3 sm:py-5 drop-shadow-xl rounded-lg">
         <p className="text-brown-6 font-semibold sm:font-bold text-sm sm:text-lg mx-5 mt-5">
           SKYCHAT
         </p>
@@ -292,19 +292,19 @@ const Projects = () => {
             </div>
             <div className="flex flex-col gap-2 mt-12 bg-white rounded-lg drop-shadow-xl">
               <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
-                <img src="/encryption.png" className="w-5 sm:w-7" alt="" />
+                <img src="/encryption.png" className="w-4 sm:w-6" alt="" />
                 <p className="font-semibold text-brown-6 text-xs">
                   DATA ENCRYPTION
                 </p>
               </div>
               <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
-                <img src="/connection.png" className="w-5 sm:w-7" alt="" />
+                <img src="/connection.png" className="w-4 sm:w-6" alt="" />
                 <p className="font-semibold text-brown-6 text-xs">
                   WORKING CONNECTION
                 </p>
               </div>
               <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
-                <img src="/authentication.png" className="w-5 sm:w-7" alt="" />
+                <img src="/authentication.png" className="w-4 sm:w-6" alt="" />
                 <p className="font-semibold text-brown-6 text-xs">
                   MULTIPLE AUTHENTICATION
                 </p>
@@ -360,8 +360,15 @@ const Projects = () => {
             </svg>
           </a>
         </div>
-        <img src="/wave-haikei.svg" className="absolute bottom-0 z-10" alt="" />
+        <img
+          src="/wave-haikei.svg"
+          className="absolute bottom-0 z-10 w-full"
+          alt=""
+        />
       </div>
+      <p className=" text-brown-4 text-sm font-semibold text-center w-full mt-24 sm:mt-32">
+        WHAT CAN I DO
+      </p>
     </section>
   );
 };
