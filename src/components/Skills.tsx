@@ -1,18 +1,7 @@
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilty from "react-tilty";
 
 const Skills = () => {
-  const defaultOptions = {
-    reverse: false, // reverse the tilt direction
-    max: 35, // max tilt rotation (degrees)
-    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-    scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
-    speed: 1000, // Speed of the enter/exit transition
-    transition: true, // Set a transition on enter/exit.
-    axis: null, // What axis should be disabled. Can be X or Y.
-    reset: true, // If the tilt effect has to be reset on exit.
-    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
-  };
   return (
     <section className="bg-none min-h-300 relative w-full">
       <img
@@ -25,8 +14,8 @@ const Skills = () => {
           <img src="/working.svg" className="w-3/4" alt="" />
         </div>
         <div className="w-full md:w-3/5">
-          <Tilt options={defaultOptions}>
-            <div className="flex flex-col rounded-md bg-caramel-4 w-full drop-shadow-md p-5 border-l-8 border-l-gray-1 gap-5">
+          <Tilty speed={1500} scale={1.1} reverse>
+            <div className="flex flex-col duration-100 rounded-md bg-caramel-4 w-full drop-shadow-md p-5 border-l-8 border-l-gray-1 gap-5">
               <div className="flex flex-col md:flex-row items-center justify-center gap-2">
                 <div className="bg-caramel-6 rounded-full flex flex-row items-center justify-center p-3 gap-3">
                   <img src="/frontend.png" className="w-14 md:w-28" alt="" />
@@ -78,9 +67,9 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </Tilt>
-          <Tilt options={defaultOptions}>
-            <div className="flex flex-col rounded-md bg-brown-6 w-full drop-shadow-lg p-5 border-l-8 border-l-caramel gap-5 mt-5">
+          </Tilty>
+          <Tilty speed={1500} scale={1.1} reverse>
+            <div className="flex flex-col duration-100 rounded-md bg-brown-6 w-full drop-shadow-lg p-5 border-l-8 border-l-caramel gap-5 mt-5">
               <div className="flex flex-col md:flex-row items-center justify-center gap-2">
                 <div className="bg-caramel-7 rounded-full flex flex-row items-center justify-center p-3 gap-3">
                   <img src="/backend.png" className="w-14 md:w-28" alt="" />
@@ -124,7 +113,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-          </Tilt>
+          </Tilty>
         </div>
       </div>
     </section>

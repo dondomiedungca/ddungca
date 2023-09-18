@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["react-tilt"],
+  transpilePackages: ["react-tilty"],
   reactStrictMode: true,
 };
 
