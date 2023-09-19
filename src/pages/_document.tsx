@@ -4,7 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <title>Dondomie Dungca</title>
-      <Head></Head>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <body>
         <Main />
         <NextScript />
