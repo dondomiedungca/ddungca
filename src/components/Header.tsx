@@ -7,7 +7,7 @@ const Header = () => {
       initial={{ y: -15, opacity: 0.3 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="w-full h-32 lg:h-48 flex flex-row items-center justify-center gap-5 sm:gap-8 fixed z-50"
+      className="w-full mt-14 lg:mt-24 flex flex-row items-center justify-center gap-5 sm:gap-8 fixed z-50"
     >
       <button className="bg-caramel px-2 py-1 sm:px-4 sm:py-2 drop-shadow-md rounded-3xl flex flex-row items-center justify-center gap-1">
         <img className="w-6 sm:w-10" src="/memoji2.png" alt="" />

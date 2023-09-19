@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Particles from "@/components/Particles";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import WorkHistory from "@/components/WorkHistory";
+import Contact from "@/components/Contact";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -54,6 +56,8 @@ export default function Home() {
       </section>
       <Projects />
       <Skills />
+      <WorkHistory />
+      <Contact />
     </main>
   );
 }

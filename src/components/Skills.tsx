@@ -3,7 +3,7 @@ import Tilty from "react-tilty";
 
 const Skills = () => {
   return (
-    <section className="bg-none min-h-300 relative w-full">
+    <section className="bg-white min-h-300 relative w-full">
       <img
         src="/waves-bottom.svg"
         className="absolute z-10 top-0 left-0 w-full"

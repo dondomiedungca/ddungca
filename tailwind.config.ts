@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "lg-1": "1295px",
+        "lg-2": "1655px",
+        "lg-3": "1410px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -23,6 +28,8 @@ const config: Config = {
         "brown-7": "#787067",
         "brown-8": "#675D53",
         "brown-9": "#6A6A6A",
+        "brown-10": "#ada49a",
+        "brown-11": "#B19D89",
         "white-1": "#FFFCFA",
         caramel: "#FFFAF5",
         "caramel-2": "#FFF8F0",
@@ -31,6 +38,10 @@ const config: Config = {
         "caramel-5": "#F8EBDE",
         "caramel-6": "#F8F0E7",
         "caramel-7": "#f7f4f0",
+        "caramel-8": "#FFF7EE",
+        "caramel-9": "#FBF7F3",
+        "caramel-10": "#F8F0E8",
+        "caramel-11": "#faf4ed",
         "gray-1": "#888585",
       },
       height: {
@@ -55,6 +66,8 @@ const config: Config = {
       },
       fontSize: {
         "2xs": "8px",
+        "lg-1": ".90rem",
+        "lg-2": ".80rem",
       },
       borderWidth: {
         "1": "1px",
