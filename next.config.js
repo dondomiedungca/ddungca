@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["react-tilty"],
+  transpilePackages: ["react-tilty", "react-scroll"],
   reactStrictMode: true,
 };
 

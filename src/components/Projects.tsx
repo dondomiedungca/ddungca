@@ -1,8 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, forwardRef } from "react";
 import { useInView } from "react-intersection-observer";
 
-const Projects = () => {
+const Projects = (props: any, ref: any) => {
   const { ref: image1, inView: project1InView } = useInView({
     threshold: 1,
   });
@@ -62,7 +62,7 @@ const Projects = () => {
   }, [project2Inview]);
 
   return (
-    <section className="bg-caramel-2 min-h-500">
+    <section ref={ref} className="bg-caramel-2 min-h-500">
       <p className="relative z-30 top-5 text-brown-4 text-sm font-semibold text-center w-full">
         FEATURED PROJECTS
       </p>
@@ -373,4 +373,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default forwardRef(Projects);

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const WorkHistory = () => {
+const WorkHistory = (props: any, ref: any) => {
   const isbxDate = "August 2022 - Present";
   const istorDate = "March 2019 - Aug. 2022";
   return (
-    <section className="bg-white min-h-300 relative w-full">
+    <section ref={ref} className="bg-white min-h-300 relative w-full">
       <div className="w-3/4 lg:w-1/2 mx-auto min-h-200 bg-none pt-40">
         <p className="text-brown-4 font-semibold text-sm">
           Here are the awesome companies that I&apos;ve been work with over the
@@ -166,4 +166,4 @@ const WorkHistory = () => {
   );
 };
 
-export default WorkHistory;
+export default forwardRef(WorkHistory);

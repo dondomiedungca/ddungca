@@ -6,15 +6,26 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkHistory from "@/components/WorkHistory";
 import Contact from "@/components/Contact";
+import { useRef } from "react";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
+  const projectRefs = useRef<null | HTMLDivElement>(null);
+  const workHistoryRef = useRef<null | HTMLDivElement>(null);
+  const skillsRef = useRef<null | HTMLDivElement>(null);
+  const contactRef = useRef<null | HTMLDivElement>(null);
+
   return (
     <main className={`bg-white ${inter.className}`}>
       <section className="relative overflow-x-clip pb-20 sm:pb-40 min-h-500 md:min-h-700">
         <Particles />
-        <Header />
+        <Header
+          projectRefs={projectRefs}
+          workHistoryRef={workHistoryRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+        />
         <div className="w-3/4 lg:w-1/2 mx-auto relative z-30 pt-20 lg:pt-32">
           <div className="intro-section w-full pt-20 sm:pt-32 flex flex-col items-center justify-center">
             <h1 className="text-3xl lg:text-5xl text-center font-bold text-brown-2">
@@ -54,10 +65,10 @@ export default function Home() {
           alt=""
         />
       </section>
-      <Projects />
-      <Skills />
-      <WorkHistory />
-      <Contact />
+      <Projects ref={projectRefs} />
+      <Skills ref={skillsRef} />
+      <WorkHistory ref={workHistoryRef} />
+      <Contact ref={contactRef} />
     </main>
   );
 }

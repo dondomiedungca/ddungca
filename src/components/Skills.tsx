@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Tilty from "react-tilty";
 
-const Skills = () => {
+const Skills = (props: any, ref: any) => {
   return (
-    <section className="bg-white min-h-300 relative w-full">
+    <section ref={ref} className="bg-white min-h-300 relative w-full">
       <img
         src="/waves-bottom.svg"
         className="absolute z-10 top-0 left-0 w-full"
@@ -120,4 +120,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default forwardRef(Skills);

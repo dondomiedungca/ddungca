@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import { Formik } from "formik";
 import { motion, useAnimation } from "framer-motion";
 import * as Yup from "yup";
@@ -38,20 +38,21 @@ const Input = ({
   );
 };
 
-const Contact = () => {
+const Contact = (props: any, ref: any) => {
   const animate = useAnimation();
   const [sending, setSending] = useState<boolean>(false);
-  const handleClick = async (values: any) => {
+  const handleClick = async (values: any, resetForm: any) => {
     animate.start("animate");
     setSending(true);
 
     setTimeout(() => {
+      resetForm();
       setSending(false);
       animate.start("initial");
     }, 1000);
   };
   return (
-    <section className="bg-caramel w-full mt-28">
+    <section ref={ref} className="bg-caramel w-full mt-28">
       <div className="w-3/4 lg:w-1/2 mx-auto min-h-300 pt-24 pb-14">
         <p className="text-brown-3 text-lg font-semibold">GET IN TOUCH</p>
         <p className="text-brown-3 text-md font-normal">
@@ -72,9 +73,8 @@ const Contact = () => {
                   .required("This field is required."),
               })}
               initialValues={{ email: "", name: "", message: "" }}
-              onSubmit={(values) => {
-                console.log(values);
-                handleClick(values);
+              onSubmit={(values, { resetForm }) => {
+                handleClick(values, resetForm);
               }}
             >
               {({ values, errors, touched, handleChange, handleSubmit }) => (
@@ -189,4 +189,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default forwardRef(Contact);
