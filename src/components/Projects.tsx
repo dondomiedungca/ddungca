@@ -38,11 +38,11 @@ const Projects = (props: any, ref: any) => {
 
   const project2Images = useMemo(
     () => [
-      { path: "/expo-logo.png", width: "w-10" },
-      { path: "/postgres.png", width: "w-10" },
-      { path: "/nestjs.png", width: "w-10" },
-      { path: "/socket.io.png", width: "w-10" },
-      { path: "/docker-logo.png", width: "w-10" },
+      { path: "/expo-logo.png", width: "w-6" },
+      { path: "/postgres.png", width: "w-7" },
+      { path: "/nestjs.png", width: "w-6" },
+      { path: "/socket.io.png", width: "w-6" },
+      { path: "/docker-logo.png", width: "w-6" },
     ],
     []
   );
@@ -146,7 +146,7 @@ const Projects = (props: any, ref: any) => {
           </p>
           <p className="text-brown-4 font-semibold text-xs sm:text-sm mt-7">
             A fully working web meeting conference that used WebRTC including
-            the functionaliity to share user screen and tabs, toggling the video
+            the functionality to share user screens and tabs, toggling the video
             and microphone.
           </p>
           <p className="text-center sm:text-left text-brown-7 font-semibold text-xs sm:text-sm mt-7">
@@ -263,9 +263,9 @@ const Projects = (props: any, ref: any) => {
           - Mobile Application - 2023
         </p>
         <p className="relative z-20 text-brown-4 font-semibold text-xs sm:text-sm mt-7 mx-5">
-          I also build a mobile application made from Expo React Native. This
+          I also built a mobile application made from Expo React Native. This
           application included the functionality of Chat, Video call,
-          Authentication via Google authentication and custom authentication.
+          Authentication via Google authentication, and custom authentication.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row relative z-20 sm:items-center justify-start sm:justify-center px-5 mt-5">
           <div>
@@ -274,7 +274,7 @@ const Projects = (props: any, ref: any) => {
             </p>
             <div
               ref={project2Ref}
-              className="relative z-20 mt-3 sm:mt-7 flex flex-row flex-wrap justify-center sm:justify-center gap-4 sm:gap-5 w-full overflow-y-hidden"
+              className="relative z-20 pt-3 sm:pt-7 flex flex-row flex-wrap justify-center sm:justify-center gap-4 sm:gap-5 w-full overflow-y-hidden"
             >
               {project2Images.map((imgObj, i) => (
                 <motion.img

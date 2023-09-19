@@ -56,7 +56,7 @@ const Contact = (props: any, ref: any) => {
       <div className="w-3/4 lg:w-1/2 mx-auto min-h-300 pt-24 pb-14">
         <p className="text-brown-3 text-lg font-semibold">GET IN TOUCH</p>
         <p className="text-brown-3 text-md font-normal">
-          FEEL FREE TO SEND ME A MESSAGE OR JUST WANNA SAY HELLO
+          FEEL FREE TO SEND ME A MESSAGE OR JUST WANT TO SAY HELLO
         </p>
         <div className="flex flex-row gap-5 mt-10">
           <div className="w-full sm:w-1/2 flex flex-col">

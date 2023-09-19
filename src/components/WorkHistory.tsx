@@ -7,14 +7,14 @@ const WorkHistory = (props: any, ref: any) => {
     <section ref={ref} className="bg-white min-h-300 relative w-full">
       <div className="w-3/4 lg:w-1/2 mx-auto min-h-200 bg-none pt-40">
         <p className="text-brown-4 font-semibold text-sm">
-          Here are the awesome companies that I&apos;ve been work with over the
-          years. Dealing with the challenges lead me to improved myself and
+          Here are the awesome companies that I&apos;ve been working with over
+          the years. Dealing with the challenges led me to improve myself and
           become more creative and productive during my working hours.
           <br />
           <br />
           The usage of their latest technology also helps me to grow my skill
-          set. And by continuing the learning of new tech trends boost me to
-          develop and contribute some of them to my current job.
+          set. Continuing the learn of new tech trends boosts me to develop and
+          contribute some of them to my current job.
         </p>
         <div className="flex flex-row w-full gap-5 bg-caramel-8 p-3 lg-1:p-10 mt-16 drop-shadow-sm rounded-lg">
           <p className="hidden text-brown-6 font-normal text-sm lg-1:flex flex-row items-start w-2/6 mt-1">
@@ -47,14 +47,14 @@ const WorkHistory = (props: any, ref: any) => {
               </a>
             </div>
             <p className="text-brown-2 text-xs lg-1:text-sm font-semibold mt-5">
-              Developing and maintaining application focus on both web and
-              mobile is my position in here. Communication with the Project
-              Managers, collaboration with the team and QA is one of the key to
-              deliver high and scalable feature of the product.
+              Developing and maintaining applications focused on both web and
+              mobile is my position here. Communication with the Project
+              Managers, collaboration with the team and QA is one of the keys to
+              delivering high and scalable feature of the product.
               <br />
               <br />
-              As a developer I push myself to conduct a manual tests and
-              automation tests to ensure a bug free applications.
+              As a developer, I push myself to conduct manual tests and
+              automation tests to ensure bug-free applications.
             </p>
             <div className="flex flex-row flex-wrap gap-3 mt-4">
               <div className="bg-caramel-5 px-4 py-1 rounded-full border-1 border-brown-6">
@@ -122,14 +122,14 @@ const WorkHistory = (props: any, ref: any) => {
               </a>
             </div>
             <p className="text-brown-2 text-xs lg-1:text-sm font-semibold mt-5">
-              Delivering feature requests from clients, maintaining the server
-              racks from different countries. As a developer I prioritize the
-              scalability of the application and also collaborate with the
-              manager and QA.
+              Delivering feature requests from clients, and maintaining the
+              server racks from different countries. As a developer, I
+              prioritize the scalability of the application and also collaborate
+              with the manager and QA.
               <br />
               <br />
-              In this job I also managed multiple projects, conduct manual test
-              and analyze some of huge data from the cloud.
+              In this job, I also managed multiple projects, conducted manual
+              test and analyze some of the huge data from the cloud.
             </p>
             <div className="flex flex-row flex-wrap gap-3 mt-4">
               <div className="bg-caramel-5 px-4 py-1 rounded-full border-1 border-brown-6">

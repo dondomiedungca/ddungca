@@ -22,11 +22,11 @@ const Skills = (props: any, ref: any) => {
                 </div>
                 <div className="text-center md:text-left">
                   <p className="text-brown-8 text-sm font-bold">
-                    Front End Development
+                    Front-End Development
                   </p>
                   <p className="text-brown-9 text-xs font-semibold mt-3">
-                    Create front end application including the responsiveness,
-                    user interactivity and user experience.
+                    Create front-end applications including responsiveness, user
+                    interactivity, and user experience.
                   </p>
                 </div>
               </div>
@@ -76,10 +76,10 @@ const Skills = (props: any, ref: any) => {
                 </div>
                 <div className="text-center md:text-left">
                   <p className="text-caramel-6 text-sm font-bold">
-                    Back End Development
+                    Back-End Development
                   </p>
                   <p className="text-caramel-7 text-xs font-semibold mt-3">
-                    Create and work with the modern back end language and tools
+                    Create and work with the modern back-end language and tools
                     with the power of security dynamic and reusable plugins.
                   </p>
                 </div>

@@ -48,8 +48,8 @@ export default function Home() {
             </div>
             <div className="summary mt-10 w-full lg:w-3/4">
               <p className="font-semibold text-gray-500 text-xs sm:text-lg text-center">
-                A Full Stack developer with over 4 years of experience
-                delivering highly efficient and scalable application focus on
+                A Full-Stack developer with over 4 years of experience
+                delivering highly efficient and scalable applications focused on
                 both web and mobile.
                 <br />
                 <br />
