@@ -38,11 +38,19 @@ const Projects = (props: any, ref: any) => {
 
   const project2Images = useMemo(
     () => [
-      { path: "/expo-logo.png", width: "w-6" },
-      { path: "/postgres.png", width: "w-7" },
-      { path: "/nestjs.png", width: "w-6" },
-      { path: "/socket.io.png", width: "w-6" },
-      { path: "/docker-logo.png", width: "w-6" },
+      { path: "/expo-logo.png", width: "w-6", link: "https://expo.dev/" },
+      {
+        path: "/postgres.png",
+        width: "w-7",
+        link: "https://www.postgresql.org/",
+      },
+      { path: "/nestjs.png", width: "w-6", link: "https://nestjs.com/" },
+      { path: "/socket.io.png", width: "w-6", link: "https://socket.io/" },
+      {
+        path: "/docker-logo.png",
+        width: "w-6",
+        link: "https://www.docker.com/",
+      },
     ],
     []
   );
@@ -153,12 +161,52 @@ const Projects = (props: any, ref: any) => {
             TECT STACK USED
           </p>
           <div className="w-full sm:w-3/4 flex flex-row py-5 gap-5 sm:gap-7 flex-wrap items-center justify-center">
-            <img src="/webrtc.png" className="w-5 sm:w-7 max-w-max" alt="" />
-            <img src="/mongodb.png" className="h-5 sm:h-7 max-w-max" alt="" />
-            <img src="/nestjs.png" className="w-5 sm:w-7" alt="" />
-            <img src="/socket.io.png" className="w-5 sm:w-7" alt="" />
-            <img src="/postgres.png" className="w-8 sm:w-10 min-w-32" alt="" />
-            <img src="/vite.png" className="w-5 sm:w-7" alt="" />
+            <a
+              href="https://webrtc.org/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/webrtc.png" className="w-5 sm:w-7 max-w-max" alt="" />
+            </a>
+            <a
+              href="https://www.mongodb.com/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/mongodb.png" className="h-5 sm:h-7 max-w-max" alt="" />
+            </a>
+            <a
+              href="https://nestjs.com/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/nestjs.png" className="w-5 sm:w-7" alt="" />
+            </a>
+            <a
+              href="https://socket.io/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/socket.io.png" className="w-5 sm:w-7" alt="" />
+            </a>
+            <a
+              href="https://www.postgresql.org/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img
+                src="/postgres.png"
+                className="w-8 sm:w-10 min-w-32"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://vitejs.dev/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/vite.png" className="w-5 sm:w-7" alt="" />
+            </a>
           </div>
           <div className="hidden mt-10 sm:flex flex-row justify-between items-center">
             <div className="flex flex-row items-center gap-2">
@@ -231,7 +279,13 @@ const Projects = (props: any, ref: any) => {
                 </svg>
               </a>
             </div>
-            <img src="/leiger-logo.png" className="mt-1 h-8" alt="" />
+            <a
+              href="https://capable-moxie-0abfb6.netlify.app/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <img src="/leiger-logo.png" className="mt-1 h-8" alt="" />
+            </a>
           </div>
         </div>
         <div className="w-full sm:w-1/2 min-h-200 sm:min-h-100 relative overflow-x-hidden">
@@ -277,17 +331,24 @@ const Projects = (props: any, ref: any) => {
               className="relative z-20 pt-3 sm:pt-7 flex flex-row flex-wrap justify-center sm:justify-center gap-4 sm:gap-5 w-full overflow-y-hidden"
             >
               {project2Images.map((imgObj, i) => (
-                <motion.img
-                  animate={animate3}
-                  initial={{
-                    opacity: 0,
-                    y: 100,
-                  }}
+                <a
+                  href={imgObj.link}
                   key={i}
-                  src={imgObj.path}
-                  custom={i}
-                  className={`${imgObj.width}`}
-                />
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <motion.img
+                    animate={animate3}
+                    initial={{
+                      opacity: 0,
+                      y: 100,
+                    }}
+                    key={i}
+                    src={imgObj.path}
+                    custom={i}
+                    className={`${imgObj.width}`}
+                  />
+                </a>
               ))}
             </div>
             <div className="flex flex-col gap-2 mt-12 bg-white rounded-lg drop-shadow-xl">
