@@ -26,30 +26,30 @@ const Header = ({
         </small>
       </button>
       <div className="select-none flex flex-row gap-7 sm:gap-10 py-2 px-4 sm:py-3 sm:px-5 items-center justify-center bg-white drop-shadow-lg rounded-full">
-        <a
+        <button
           onClick={() =>
             projectRefs.current?.scrollIntoView({ behavior: "smooth" })
           }
           className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           PROJECTS
-        </a>
-        <a
+        </button>
+        <button
           onClick={() =>
             workHistoryRef.current?.scrollIntoView({ behavior: "smooth" })
           }
           className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           WORK HISTORY
-        </a>
-        <a
+        </button>
+        <button
           onClick={() =>
             skillsRef.current?.scrollIntoView({ behavior: "smooth" })
           }
           className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           SKILLS
-        </a>
+        </button>
       </div>
     </motion.div>
   );
