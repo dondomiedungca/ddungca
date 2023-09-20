@@ -53,7 +53,7 @@ const WorkHistory = (props: any, ref: any) => {
                 <img src="/company-link.png" className="w-4" alt="" />
               </a>
             </div>
-            <p className="text-brown-2 text-xs lg-1:text-sm font-medium sm:font-semibold mt-5">
+            <p className="text-brown-2 text-xs lg-1:text-sm font-medium sm:font-semibold mt-8">
               Developing and maintaining applications focused on both web and
               mobile is my position here. Communication with the Project
               Managers, collaboration with the team and QA is one of the keys to
@@ -136,7 +136,7 @@ const WorkHistory = (props: any, ref: any) => {
                 <img src="/company-link.png" className="w-4" alt="" />
               </a>
             </div>
-            <p className="text-brown-2 text-xs lg-1:text-sm font-medium sm:font-semibold mt-5">
+            <p className="text-brown-2 text-xs lg-1:text-sm font-medium sm:font-semibold mt-8">
               Delivering feature requests from clients, and maintaining the
               server racks from different countries. As a developer, I
               prioritize the scalability of the application and also collaborate
