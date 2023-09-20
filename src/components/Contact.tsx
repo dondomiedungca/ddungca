@@ -124,7 +124,7 @@ const Contact = (props: any, ref: any) => {
                       {errors?.message}
                     </p>
                   )}
-                  <div className="relative mt-10">
+                  <div className="select-none relative mt-10">
                     <motion.button
                       type="submit"
                       disabled={sending}

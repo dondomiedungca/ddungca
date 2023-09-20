@@ -18,7 +18,7 @@ const Header = ({
         onClick={() =>
           contactRef.current?.scrollIntoView({ behavior: "smooth" })
         }
-        className="bg-caramel px-2 py-1 sm:px-4 sm:py-2 drop-shadow-md rounded-3xl flex flex-row items-center justify-center gap-1 duration-200 transform active:scale-75 transition-transform"
+        className="select-none bg-caramel px-2 py-1 sm:px-4 sm:py-2 drop-shadow-md rounded-3xl flex flex-row items-center justify-center gap-1 duration-200 transform active:scale-75 transition-transform"
       >
         <img className="w-6 sm:w-10" src="/memoji2.png" alt="" />
         <small className="text-gray-500 text-2xs sm:text-xm font-bold">
@@ -30,7 +30,7 @@ const Header = ({
           onClick={() =>
             projectRefs.current?.scrollIntoView({ behavior: "smooth" })
           }
-          className="cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
+          className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           PROJECTS
         </a>
@@ -38,7 +38,7 @@ const Header = ({
           onClick={() =>
             workHistoryRef.current?.scrollIntoView({ behavior: "smooth" })
           }
-          className="cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
+          className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           WORK HISTORY
         </a>
@@ -46,7 +46,7 @@ const Header = ({
           onClick={() =>
             skillsRef.current?.scrollIntoView({ behavior: "smooth" })
           }
-          className="cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
+          className="select-none cursor-pointer font-bold text-brown-1 text-2xs sm:text-sm"
         >
           SKILLS
         </a>
