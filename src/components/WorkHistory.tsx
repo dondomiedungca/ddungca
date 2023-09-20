@@ -28,7 +28,7 @@ const WorkHistory = (props: any, ref: any) => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-1 lg-1:gap-4 items-start sm:items-center">
                   <p className="text-brown-6 font-semibold text-xs lg-1:text-lg">
-                    - FULL STACK DEVELOPER
+                    FULL STACK DEVELOPER
                   </p>
                   <p className="hidden sm:block">
                     <img src="/dot.png" className="w-2" alt="" />
@@ -39,7 +39,7 @@ const WorkHistory = (props: any, ref: any) => {
                       src="/company.png"
                       alt=""
                     />
-                    <small className="text-brown-6 sm:font-semibold text-xs lg-1:text-lg">
+                    <small className="text-brown-6 font-medium sm:font-semibold text-xs lg-1:text-lg">
                       ISBX
                     </small>
                   </p>
@@ -111,7 +111,7 @@ const WorkHistory = (props: any, ref: any) => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-1 lg-1:gap-4 items-start sm:items-center">
                   <p className="text-brown-6 font-semibold text-xs sm:text-lg-2 lg-3:text-lg-1 lg-2:text-lg">
-                    - WEB DEVELOPER
+                    WEB DEVELOPER
                   </p>
                   <p className="hidden sm:block">
                     <img src="/dot.png" className="w-2" alt="" />
@@ -122,7 +122,7 @@ const WorkHistory = (props: any, ref: any) => {
                       src="/company.png"
                       alt=""
                     />
-                    <small className="text-brown-6 sm:font-semibold text-xs sm:text-lg-2 lg-3:text-lg-1 lg-2:text-lg">
+                    <small className="text-brown-6 font-medium sm:font-semibold text-xs sm:text-lg-2 lg-3:text-lg-1 lg-2:text-lg">
                       ISTOR DATA SOLUTIONS
                     </small>
                   </p>
