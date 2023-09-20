@@ -52,13 +52,15 @@ const Contact = (props: any, ref: any) => {
     }, 1000);
   };
   return (
-    <section ref={ref} className="bg-caramel w-full mt-28">
-      <div className="w-3/4 lg:w-1/2 mx-auto min-h-300 pt-24 pb-14">
-        <p className="text-brown-3 text-lg font-semibold">GET IN TOUCH</p>
-        <p className="text-brown-3 text-md font-normal">
+    <section ref={ref} className="bg-caramel w-full mt-14 sm:mt-28">
+      <div className="w-3/4 lg:w-1/2 mx-auto min-h-300 pt-10 sm:pt-24 pb-8 sm:pb-14">
+        <p className="text-brown-3 text-md sm:text-lg font-semibold">
+          GET IN TOUCH
+        </p>
+        <p className="text-brown-3 text-xs sm:text-md font-normal">
           FEEL FREE TO SEND ME A MESSAGE OR JUST WANT TO SAY HELLO
         </p>
-        <div className="flex flex-row gap-5 mt-10">
+        <div className="flex flex-row gap-5 mt-7 sm:mt-10">
           <div className="w-full sm:w-1/2 flex flex-col">
             <Formik
               validationSchema={Yup.object().shape({
@@ -142,7 +144,7 @@ const Contact = (props: any, ref: any) => {
                       onClick={() => {
                         handleSubmit();
                       }}
-                      className={`absolute z-20 px-5 py-2 h-10 w-36 ${
+                      className={`absolute z-20 px-5 py-2 h-10 w-28 sm:w-36 ${
                         sending
                           ? "bg-caramel-11 cursor-not-allowed"
                           : "bg-caramel-5"
@@ -151,12 +153,12 @@ const Contact = (props: any, ref: any) => {
                       <p
                         className={`${
                           sending ? "text-gray-400" : "text-brown-4"
-                        } text-xs font-semibold`}
+                        } text-2xs sm:text-xs font-bold sm:font-semibold`}
                       >
                         {sending ? "SENDING ..." : "SEND MESSAGE"}
                       </p>
                     </motion.button>
-                    <div className="absolute z-10 h-10 top-2 bg-brown-11 w-36"></div>
+                    <div className="absolute z-10 h-10 top-2 bg-brown-11 w-28 sm:w-36"></div>
                   </div>
                 </>
               )}

@@ -82,68 +82,14 @@ const Projects = (props: any, ref: any) => {
               target="_blank"
               className="bg-white-1 cursor-pointer rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="28"
-                height="28"
-                viewBox="0,0,256,256"
-              >
-                <g
-                  fill="#717171"
-                  fillRule="nonzero"
-                  stroke="none"
-                  strokeWidth="1"
-                  strokeLinecap="butt"
-                  strokeLinejoin="miter"
-                  strokeMiterlimit="10"
-                  strokeDasharray=""
-                  strokeDashoffset="0"
-                  fontFamily="none"
-                  fontWeight="none"
-                  fontSize="none"
-                  textAnchor="none"
-                >
-                  <g transform="scale(8.53333,8.53333)">
-                    <path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path>
-                  </g>
-                </g>
-              </svg>
+              <img src="/link.png" className="w-5" alt="" />
             </a>
             <a
               href="https://github.com/nodnod08/leiger-web"
               target="_blank"
               className="bg-white-1 cursor-pointer rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="28"
-                height="28"
-                viewBox="0,0,256,256"
-              >
-                <g
-                  fill="#717171"
-                  fillRule="nonzero"
-                  stroke="none"
-                  strokeWidth="1"
-                  strokeLinecap="butt"
-                  strokeLinejoin="miter"
-                  strokeMiterlimit="10"
-                  strokeDasharray=""
-                  strokeDashoffset="0"
-                  fontFamily="none"
-                  fontWeight="none"
-                  fontSize="none"
-                  textAnchor="none"
-                >
-                  <g transform="scale(8.53333,8.53333)">
-                    <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
-                  </g>
-                </g>
-              </svg>
+              <img src="/github-link.png" className="w-5" alt="" />
             </a>
           </div>
           <p className="text-brown-5 font-semibold sm:font-bold text-md sm:text-lg">
@@ -215,68 +161,14 @@ const Projects = (props: any, ref: any) => {
                 target="_blank"
                 className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="28"
-                  height="28"
-                  viewBox="0,0,256,256"
-                >
-                  <g
-                    fill="#717171"
-                    fillRule="nonzero"
-                    stroke="none"
-                    strokeWidth="1"
-                    strokeLinecap="butt"
-                    strokeLinejoin="miter"
-                    strokeMiterlimit="10"
-                    strokeDasharray=""
-                    strokeDashoffset="0"
-                    fontFamily="none"
-                    fontWeight="none"
-                    fontSize="none"
-                    textAnchor="none"
-                  >
-                    <g transform="scale(8.53333,8.53333)">
-                      <path d="M25.98047,2.99023c-0.03726,0.00118 -0.07443,0.00444 -0.11133,0.00977h-5.86914c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h3.58594l-10.29297,10.29297c-0.26124,0.25082 -0.36648,0.62327 -0.27512,0.97371c0.09136,0.35044 0.36503,0.62411 0.71547,0.71547c0.35044,0.09136 0.72289,-0.01388 0.97371,-0.27512l10.29297,-10.29297v3.58594c-0.0051,0.36064 0.18438,0.69608 0.49587,0.87789c0.3115,0.18181 0.69676,0.18181 1.00825,0c0.3115,-0.18181 0.50097,-0.51725 0.49587,-0.87789v-5.87305c0.04031,-0.29141 -0.04973,-0.58579 -0.24615,-0.80479c-0.19643,-0.219 -0.47931,-0.34042 -0.77338,-0.33192zM6,7c-1.09306,0 -2,0.90694 -2,2v15c0,1.09306 0.90694,2 2,2h15c1.09306,0 2,-0.90694 2,-2v-10v-2.57812l-2,2v2.57813v8h-15v-15h8h2h0.57813l2,-2h-2.57812h-2z"></path>
-                    </g>
-                  </g>
-                </svg>
+                <img src="/link.png" className="w-6" alt="" />
               </a>
               <a
                 href="https://github.com/nodnod08/leiger-web"
                 target="_blank"
                 className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="28"
-                  height="28"
-                  viewBox="0,0,256,256"
-                >
-                  <g
-                    fill="#717171"
-                    fillRule="nonzero"
-                    stroke="none"
-                    strokeWidth="1"
-                    strokeLinecap="butt"
-                    strokeLinejoin="miter"
-                    strokeMiterlimit="10"
-                    strokeDasharray=""
-                    strokeDashoffset="0"
-                    fontFamily="none"
-                    fontWeight="none"
-                    fontSize="none"
-                    textAnchor="none"
-                  >
-                    <g transform="scale(8.53333,8.53333)">
-                      <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
-                    </g>
-                  </g>
-                </svg>
+                <img src="/github-link.png" className="w-6" alt="" />
               </a>
             </div>
             <a
@@ -351,22 +243,22 @@ const Projects = (props: any, ref: any) => {
                 </a>
               ))}
             </div>
-            <div className="flex flex-col gap-2 mt-12 bg-white rounded-lg drop-shadow-xl">
-              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+            <div className="flex flex-col gap-2 mt-12 bg-white rounded-lg drop-shadow-xl py-2">
+              <div className="bg-none rounded-full drop-shadow-lg px-3 p-1 sm:py-2 flex flex-row items-center gap-2">
                 <img src="/encryption.png" className="w-4 sm:w-6" alt="" />
-                <p className="font-semibold text-brown-6 text-xs">
+                <p className="font-semibold text-brown-6 text-2xs sm:text-xs">
                   DATA ENCRYPTION
                 </p>
               </div>
-              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+              <div className="bg-none rounded-full drop-shadow-lg px-3 py-1 sm:py-2 flex flex-row items-center gap-2">
                 <img src="/connection.png" className="w-4 sm:w-6" alt="" />
-                <p className="font-semibold text-brown-6 text-xs">
+                <p className="font-semibold text-brown-6 text-2xs sm:text-xs">
                   WORKING CONNECTION
                 </p>
               </div>
-              <div className="bg-none rounded-full drop-shadow-lg px-3 py-2 flex flex-row items-center gap-2">
+              <div className="bg-none rounded-full drop-shadow-lg px-3 py-1 sm:py-2 flex flex-row items-center gap-2">
                 <img src="/authentication.png" className="w-4 sm:w-6" alt="" />
-                <p className="font-semibold text-brown-6 text-xs">
+                <p className="font-semibold text-brown-6 text-2xs sm:text-xs">
                   MULTIPLE AUTHENTICATION
                 </p>
               </div>
@@ -391,34 +283,7 @@ const Projects = (props: any, ref: any) => {
             target="_blank"
             className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="28"
-              height="28"
-              viewBox="0,0,256,256"
-            >
-              <g
-                fill="#717171"
-                fillRule="nonzero"
-                stroke="none"
-                strokeWidth="1"
-                strokeLinecap="butt"
-                strokeLinejoin="miter"
-                strokeMiterlimit="10"
-                strokeDasharray=""
-                strokeDashoffset="0"
-                fontFamily="none"
-                fontWeight="none"
-                fontSize="none"
-                textAnchor="none"
-              >
-                <g transform="scale(8.53333,8.53333)">
-                  <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path>
-                </g>
-              </g>
-            </svg>
+            <img src="/github-link.png" className="w-6" alt="" />
           </a>
         </div>
         <img
