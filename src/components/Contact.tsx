@@ -41,16 +41,31 @@ const Input = ({
 const Contact = (props: any, ref: any) => {
   const animate = useAnimation();
   const [sending, setSending] = useState<boolean>(false);
+  const [emailStatus, setEmailStatus] = useState<"hide" | "error" | "success">(
+    "hide"
+  );
+
   const handleClick = async (values: any, resetForm: any) => {
     animate.start("animate");
     setSending(true);
 
-    setTimeout(() => {
+    fetch(`/api/mail`, {
+      method: "POST",
+      body: JSON.stringify({
+        email: values.email,
+        name: values.name,
+        message: values.message,
+      }),
+    }).then(async (res) => {
+      const response = await res.json();
+
+      setEmailStatus(response.success ? "success" : "error");
       resetForm();
       setSending(false);
       animate.start("initial");
-    }, 1000);
+    });
   };
+
   return (
     <section ref={ref} className="bg-caramel w-full mt-14 sm:mt-28">
       <div className="w-3/4 lg:w-1/2 mx-auto min-h-300 pt-10 sm:pt-24 pb-8 sm:pb-14">
@@ -60,8 +75,46 @@ const Contact = (props: any, ref: any) => {
         <p className="text-brown-3 text-xs sm:text-md font-normal">
           FEEL FREE TO SEND ME A MESSAGE OR JUST WANT TO SAY HELLO
         </p>
-        <div className="flex flex-row gap-5 mt-7 sm:mt-10">
+        <div className="flex relative flex-row gap-5 mt-7 sm:mt-10">
           <div className="w-full sm:w-1/2 flex flex-col">
+            {emailStatus != "hide" && (
+              <div
+                className={`${
+                  emailStatus === "success"
+                    ? "bg-teal-100 border-teal-500 text-teal-900"
+                    : "bg-red-100 border-red-500 text-red-900"
+                } border-t-4 rounded-b  px-4 py-3 shadow-md`}
+                role="alert"
+              >
+                <div className="flex">
+                  <div className="py-1">
+                    <svg
+                      className={`fill-current h-6 w-6 ${
+                        emailStatus === "success"
+                          ? "text-teal-500"
+                          : "text-red-600"
+                      } mr-4`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm sm:text-md font-semibold">
+                      {emailStatus === "success"
+                        ? "Email Sent"
+                        : "Something went wrong"}
+                    </p>
+                    <p className="text-xs sm:text-sm">
+                      {emailStatus === "success"
+                        ? "I appreciate your time. I will get back to you as soon as possibe."
+                        : "There's something wrong sending an email. Please try again later."}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
             <Formik
               validationSchema={Yup.object().shape({
                 email: Yup.string()

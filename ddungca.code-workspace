@@ -4,10 +4,10 @@
       "path": "."
     },
     {
-      "path": "../leiger-web"
+      "path": "../ddungca-api"
     },
     {
-      "path": "../skychat-mobile"
+      "path": "../skychat-api"
     }
   ]
 }
