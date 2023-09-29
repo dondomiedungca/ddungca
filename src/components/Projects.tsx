@@ -85,7 +85,7 @@ const Projects = (props: any, ref: any) => {
               <img src="/link.png" className="w-5" alt="" />
             </a>
             <a
-              href="https://github.com/nodnod08/leiger-web"
+              href="https://github.com/dondomiedungca/leiger-web"
               target="_blank"
               className="bg-white-1 cursor-pointer rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
             >
@@ -164,7 +164,7 @@ const Projects = (props: any, ref: any) => {
                 <img src="/link.png" className="w-6" alt="" />
               </a>
               <a
-                href="https://github.com/nodnod08/leiger-web"
+                href="https://github.com/dondomiedungca/leiger-web"
                 target="_blank"
                 className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
               >
@@ -279,7 +279,7 @@ const Projects = (props: any, ref: any) => {
         </div>
         <div className="relative z-20 flex flex-row items-center justify-between mt-5 mx-5">
           <a
-            href="https://github.com/nodnod08/skychat-mobile"
+            href="https://github.com/dondomiedungca/skychat-mobile"
             target="_blank"
             className="cursor-pointer bg-white-1 rounded-full drop-shadow-md p-2 duration-200 transform active:scale-75 transition-transform"
           >
